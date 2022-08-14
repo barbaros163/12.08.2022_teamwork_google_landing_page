@@ -127,6 +127,11 @@ footer {
   bottom: 0;
 }
 
+.footer-right{
+  float: right;
+  margin-right: 25px;
+}
+
 .country {
   border-bottom: 1px solid #e4e4e4;
   margin-left: 13px;
