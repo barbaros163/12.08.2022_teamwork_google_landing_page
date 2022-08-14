@@ -1,201 +1,151 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100vh;
+#sign-in-btn{
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 70px;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.logo {
-  position:relative;
-  max-height: 92px;
+#appicon{
+  vertical-align: middle;
+  opacity: 0.5;
 }
 
-.logo img {
-  height: 92px;
+.header-right{
+  float: right;
+  margin-right: 25px;
 }
 
-.header-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-  padding: 20px;
-  font-size: 12px;
-  line-height: 24px;
+.header-left{
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
-.header-container a {
+nav {
+  display: block;
+}
+
+div {
+  display: block;
+}
+
+nav a {
   text-decoration: none;
-  color: #222;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  font-size: 13px;
 }
 
-.header-container a:hover {
-  text-decoration: underline;
+#google{
+  height: 95px;
+  width: 272px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 230px;
-  align-items: center;
-  gap: 25px;
-  height: 100%;
-}
-
-.search {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.search input {
-  width: 524px;
+#search{
+  font-size: 16px;
+  height: 38px;
+  width: 460px;
   border-radius: 25px;
-  border: 1px solid #dfe1e5;
-  outline-style: none;
-  padding: 13px;
+  padding: 3px;
+  border: 1px solid lightgrey;
   padding-left: 50px;
-  font-size: 1rem;
 }
 
-.fa-magnifying-glass {
-  margin-right: -40px ;
-  z-index: 1;
-  color: #dadce0;;
+.searchbar{
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 60px;
 }
 
-#mic {
-  height: 22px;
+#mag {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 10px;
+  right: 495px;
+  margin-left: 40px;
+ 
+}
+
+#microphone {
+  position: relative;
+  top: 5px;
+  right: 74px;
+  height: 20px;
   margin-left: -40px ;
 }
 
-.search input:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all ease-in 200ms;
+.btn-container{
+  text-align: center;
+  padding-top: 30px;
 }
 
-.button-area {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 255px;
-}
-
-.button-area button {
-  background-color: #f8f9fa;
-  padding: 10px;
-  border-style: none;
-  color: #3c4043;
-  border: 1px solid #f8f9fa;
+#btn1 {
+  height: 36px;
+  width: 120px;
+  border: hidden;
   border-radius: 4px;
-  font-size: 14px;
+  color: #5f6368;
+  margin-right: 8px;
 }
 
-.button-area button:hover {
-  border: 1px solid rgba(161, 150, 150, 0.411);
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+#btn2{
+  height: 36px;
+  width: 140px;
+  border: hidden;
+  border-radius: 4px;
+  color: #5f6368;
 }
 
-.credit-area {
-  font-size: 0.8rem;
+#language {
+  text-align: center;
+  margin-top: 20px;
+  font-size: small;
 }
 
-.credit-area a {
-  text-decoration: none;
-  color: #1a0dab;
-}
-
-.credit-area a:hover {
-  text-decoration: underline;
-}
-
-#name-icon img {
-  border-radius: 10px;
-}
-
-#name-icon img:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
-  cursor: pointer;
-}
-
-#nine-dots img{
-  height: 30px;
-  
-}
-
-#nine-dots img:hover {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
-  border-radius: 10px;
-}
-
-.footer-area {
-  box-sizing: border-box;
+footer {
+  width: 100%;
+  padding-left: 5px;
   background-color: #f2f2f2;
-}
-
-.region {
-  padding-left: 30px;
-  border-bottom: 1px solid #dadce0;
+  line-height: 40px;
   font-size: 14px;
-  color: #70757a;
+  position: fixed;
+  bottom: 0;
 }
 
-.link-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  font-size: 14px;
+.country {
+  border-bottom: 1px solid #e4e4e4;
+  margin-left: 13px;
+  color: #5f6368;
 }
 
-.left-links a{
-  padding: 15px;
-  color: #70757a;
+.footer-left{
+  float: left
+}
+
+nav a {
   text-decoration: none;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+  font-size: 13px;
 }
-
-.left-links a:hover{
+nav a:hover{
   text-decoration: underline;
 }
 
-.right-links a {
-  padding: 15px;
-  color: #70757a;
-  text-decoration: none;
-}
 
-.right-links a:hover {
-  text-decoration: underline;
-}
 
-@media screen and (max-width: 768px) {
-  .search input {
-      width: 224px;
-  } 
-
-  .logo img {
-      height: 72px;
-  }
-
-  .link-area {
-      display: flex;
-      flex-direction: column;
-      line-height: 30px;
-      align-items: center;
-      font-size: 10px;
-  }
-
-  .header-container {
-      padding-top: 50px;
-  }
-}
-
-.Pb9hCb {
-  margin-right: 10px;
-}
